@@ -44,11 +44,12 @@ function transpose(matrix){
     // nested loop to assign transposedMatrix[row][col] with matrix[row][col]
     for(let rowIndx = 0; rowIndx < rows; rowIndx++ ){
         for(let colIndx = 0; colIndx < cols; colIndx++){
-            
             // console.log("elem: " + matrix[rowIndx][colIndx])
+            transposedMatrix[colIndx][rowIndx] = matrix[rowIndx][colIndx]
+            // console.log( transposedMatrix[rowIndx][colIndx])
         }
     }
-
+    return transposedMatrix
 }
 
-transpose(inputMatrix2)
+console.log(transpose(inputMatrix2))
