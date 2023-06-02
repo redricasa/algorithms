@@ -26,5 +26,29 @@ function createBlankMatrix(matrix){
     return result
 }
 
-console.log(createBlankMatrix(inputMatrix2))
+// console.log(createBlankMatrix(inputMatrix2))
 
+// function that takes in a 2D array of 0s and 1s and tansposes - [takes the nth index of rows and puts then in a row of their own - 1st index of multiple rows --> elements of 1st row] them
+
+function transpose(matrix){
+    // initialize array to return
+    const transposedMatrix = []
+    const rows = matrix.length
+    const cols = matrix[0].length
+    // TODO: if stmt for edge cases of == empty matrix or == matrix with just one elem in array or == only one array
+
+    // a loop to push empty arrays to hold rows
+    for(let i = 0; i < cols; i++){
+        transposedMatrix.push([])
+    }
+    // nested loop to assign transposedMatrix[row][col] with matrix[row][col]
+    for(let rowIndx = 0; rowIndx < rows; rowIndx++ ){
+        for(let colIndx = 0; colIndx < cols; colIndx++){
+            
+            // console.log("elem: " + matrix[rowIndx][colIndx])
+        }
+    }
+
+}
+
+transpose(inputMatrix2)
