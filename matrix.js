@@ -36,17 +36,15 @@ function transpose(matrix){
     const rows = matrix.length
     const cols = matrix[0].length
     // TODO: if stmt for edge cases of == empty matrix or == matrix with just one elem in array or == only one array
-
+    if(){}
     // a loop to push empty arrays to hold rows
     for(let i = 0; i < cols; i++){
         transposedMatrix.push([])
     }
-    // nested loop to assign transposedMatrix[row][col] with matrix[row][col]
+    // nested loop to assign transposedMatrix[col][row] with matrix[row][col]
     for(let rowIndx = 0; rowIndx < rows; rowIndx++ ){
         for(let colIndx = 0; colIndx < cols; colIndx++){
-            // console.log("elem: " + matrix[rowIndx][colIndx])
             transposedMatrix[colIndx][rowIndx] = matrix[rowIndx][colIndx]
-            // console.log( transposedMatrix[rowIndx][colIndx])
         }
     }
     return transposedMatrix
